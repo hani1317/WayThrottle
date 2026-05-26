@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>WayThrottle</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/favorites.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container header-container">
+    <a href="index.html" class="logo">WayThrottle</a>
+
+    <nav class="nav">
+      <a href="types.html">Виды</a>
+      <a href="models.html">Модели</a>
+      <a href="safety.html">Безопасность</a>
+      <a href="guide.html">Гайд</a>
+      <a href="test.html">Подбор мотоцикла</a>
+    </nav>
+
+    <div class="header-right">
+    <!-- ИЗБРАННОЕ -->
+      <a href="favorites.html" class="header-icon">
+        ♡
+      </a>
+
+      <!-- СРАВНЕНИЕ -->
+      <a href="compare.html" class="header-icon">
+        ⚖
+      </a>
+
+    <div class="lang-switch">
+      <span>RU</span> | <span>EN</span>
+    </div>
+  </div>
+</header>
+
+<!-- FAVORITES -->
+
+<section class="favorites-page">
+
+  <div class="container">
+
+    <div class="favorites-header">
+
+      <h1>Избранные мотоциклы</h1>
+
+      <p>
+        Здесь сохранены модели, которые вас заинтересовали.
+      </p>
+
+    </div>
+
+    <!-- ПУСТОЕ СОСТОЯНИЕ -->
+
+    <div class="empty-favorites hidden" id="emptyFavorites">
+
+      <h2>У вас пока нет избранных мотоциклов</h2>
+
+      <p>
+        Добавляйте модели через сердечко в каталоге.
+      </p>
+
+      <a href="models.html" class="btn">
+        Перейти в каталог
+      </a>
+
+    </div>
+
+    <!-- СПИСОК -->
+
+    <div class="favorites-list" id="favoritesList"></div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+
+    <p class="footer-desc">
+      WayThrottle — сервис для помощи начинающим водителям и подбора мотоцикла.
+    </p>
+
+    <div class="footer-links">
+
+      <div>
+        <a href="types.html">Виды мотоциклов</a><br>
+        <a href="models.html">Модели</a>
+      </div>
+
+      <div>
+        <a href="test.html">Подобрать мотоцикл</a><br>
+        <a href="safety.html">Экипировка</a>
+      </div>
+
+      <div>
+        <a href="guide.html">Советы и рекомендации</a><br>
+        <a href="guide.html#faq">FAQ</a>
+      </div>
+
+    </div>
+
+   <div class="socials">
+
+  <a href="#">
+    <img src="images/X.png" alt="X">
+  </a>
+
+  <a href="#">
+    <img src="images/instagram.png" alt="Instagram">
+  </a>
+
+  <a href="#">
+    <img src="images/facebook.png" alt="Facebook">
+  </a>
+
+  <a href="#">
+    <img src="images/whatsapp.png" alt="WhatsApp">
+  </a>
+
+  <a href="#">
+    <img src="images/telegram.png" alt="Telegram">
+  </a>
+
+</div>
+
+    <p class="copyright">
+      © 2026 WayThrottle. Все права защищены.
+    </p>
+
+  </div>
+</footer>
+
+<script src="favorites.js"></script>
+</body>
+</html>

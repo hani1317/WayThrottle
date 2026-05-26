@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WayThrottle — Подбор мотоцикла</title>
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/test.css"> 
+
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-container">
+
+    <a href="index.html" class="logo">WayThrottle</a>
+
+    <nav class="nav">
+      <a href="types.html">Виды</a>
+      <a href="models.html">Модели</a>
+      <a href="safety.html">Безопасность</a>
+      <a href="guide.html">Гайд</a>
+      <a href="test.html">Подбор мотоцикла</a>
+    </nav>
+
+    <div class="lang-switch">
+      <span>RU</span> | <span>EN</span>
+    </div>
+
+  </div>
+</header>
+
+<!-- START SCREEN -->
+
+<section class="quiz-start" id="startScreen">
+
+  <div class="start-content">
+
+    <h1>Какой мотоцикл вам подходит?</h1>
+
+    <p>
+      Пройдите интерактивный тест WayThrottle и получите рекомендации
+      по типу мотоцикла и моделям, которые лучше всего подойдут
+      под ваш опыт, стиль езды и предпочтения.
+    </p>
+
+    <button class="start-btn" id="startBtn">
+      Пройти тест
+    </button>
+
+  </div>
+
+</section>
+
+<!-- QUIZ -->
+
+<section class="quiz hidden" id="quizSection">
+
+  <div class="quiz-container">
+
+    <div class="quiz-progress">
+      <span id="questionCounter">1/10</span>
+    </div>
+
+    <div class="quiz-question">
+
+      <h2 id="questionText"></h2>
+
+      <div class="answers" id="answersContainer"></div>
+
+      <div class="quiz-bottom">
+
+        <button class="back-btn" id="backBtn">
+          ←
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- RESULT -->
+
+<section class="result hidden" id="resultSection">
+
+  <div class="result-container">
+
+    <h1>Ваш результат</h1>
+
+    <p class="result-subtitle">
+      На основе ваших ответов мы подобрали наиболее подходящие мотоциклы
+    </p>
+
+    <div class="result-type">
+
+      <h2 id="resultType"></h2>
+
+      <p id="resultDescription"></p>
+
+    </div>
+
+    <h3 class="models-title">Рекомендуемые модели</h3>
+
+    <div class="result-bikes" id="resultBikes"></div>
+
+    <div class="result-buttons">
+
+      <button class="restart-btn" id="restartBtn">
+        Пройти тест заново
+      </button>
+
+      <a href="models.html" class="catalog-btn">
+        Перейти в каталог
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+
+    <p class="footer-desc">
+      WayThrottle — сервис для помощи начинающим водителям и подбора мотоцикла.
+    </p>
+
+    <div class="footer-links">
+
+      <div>
+        <a href="types.html">Виды мотоциклов</a><br>
+        <a href="models.html">Модели</a>
+      </div>
+
+      <div>
+        <a href="test.html">Подобрать мотоцикл</a><br>
+        <a href="safety.html">Экипировка</a>
+      </div>
+
+      <div>
+        <a href="guide.html">Советы и рекомендации</a><br>
+        <a href="guide.html#faq">FAQ</a>
+      </div>
+
+    </div>
+
+   <div class="socials">
+
+  <a href="#">
+    <img src="images/X.png" alt="X">
+  </a>
+
+  <a href="#">
+    <img src="images/instagram.png" alt="Instagram">
+  </a>
+
+  <a href="#">
+    <img src="images/facebook.png" alt="Facebook">
+  </a>
+
+  <a href="#">
+    <img src="images/whatsapp.png" alt="WhatsApp">
+  </a>
+
+  <a href="#">
+    <img src="images/telegram.png" alt="Telegram">
+  </a>
+
+</div>
+
+    <p class="copyright">
+      © 2026 WayThrottle. Все права защищены.
+    </p>
+
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
