@@ -1,0 +1,272 @@
+/* ========================================
+   MOTORCYCLE PAGE
+======================================== */
+
+.motorcycle-page {
+  padding: 60px 0 100px;
+}
+
+/* LAYOUT */
+
+.motorcycle-layout {
+  display: grid;
+  grid-template-columns: 1fr 520px;
+  gap: 70px;
+
+  align-items: start;
+
+  margin-bottom: 90px;
+}
+
+/* IMAGE */
+
+.motorcycle-gallery {
+  background: rgba(255,255,255,0.03);
+
+  border: 1px solid rgba(255,255,255,0.06);
+
+  padding: 40px;
+}
+
+.motorcycle-gallery img {
+  width: 100%;
+  height: 520px;
+
+  object-fit: contain;
+}
+
+/* INFO */
+
+.motorcycle-main-info {
+  position: sticky;
+  top: 120px;
+}
+
+.motorcycle-brand {
+  display: inline-block;
+
+  color: #9f9f9f;
+
+  font-size: 18px;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  margin-bottom: 18px;
+}
+
+.motorcycle-main-info h1 {
+  font-size: 64px;
+
+  line-height: 1.1;
+
+  margin-bottom: 30px;
+}
+
+.motorcycle-description {
+  font-size: 24px;
+
+  line-height: 1.7;
+
+  color: #d6d0d0;
+
+  margin-bottom: 45px;
+}
+
+/* PRICE */
+
+.motorcycle-price {
+  margin-bottom: 45px;
+}
+
+.motorcycle-price span {
+  display: block;
+
+  color: #9f9f9f;
+
+  font-size: 18px;
+
+  margin-bottom: 12px;
+}
+
+.motorcycle-price h2 {
+  font-size: 52px;
+
+  font-family: 'Oswald', sans-serif;
+
+  color: #F5EFED;
+}
+
+/* ACTIONS */
+
+.motorcycle-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+/* BUTTONS */
+
+.motorcycle-actions .btn,
+.compare-btn {
+  min-width: 210px;
+
+  background: #4B0564;
+
+  border: none;
+
+  color: #F5EFED;
+
+  padding: 18px 28px;
+
+  cursor: pointer;
+
+  font-size: 22px;
+
+  transition: 0.3s ease;
+
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.motorcycle-actions .btn:hover,
+.compare-btn:hover {
+  background: #6a0a8f;
+
+  transform: translateY(-3px);
+}
+
+.compare-btn.active {
+  background: #6a0a8f;
+}
+
+/* SPECS */
+
+.motorcycle-specs-block {
+  border-top: 1px solid rgba(255,255,255,0.08);
+
+  padding-top: 70px;
+}
+
+.motorcycle-specs-block h2 {
+  font-size: 46px;
+
+  margin-bottom: 40px;
+}
+
+.specs-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.spec-item {
+  background: rgba(255,255,255,0.03);
+
+  border: 1px solid rgba(255,255,255,0.06);
+
+  padding: 30px;
+
+  transition: 0.3s ease;
+}
+
+.spec-item:hover {
+  transform: translateY(-4px);
+
+  border-color: rgba(106,10,143,0.6);
+}
+
+.spec-item span {
+  display: block;
+
+  color: #9f9f9f;
+
+  font-size: 17px;
+
+  margin-bottom: 14px;
+}
+
+.spec-item strong {
+  font-size: 34px;
+
+  font-family: 'Oswald', sans-serif;
+
+  color: #F5EFED;
+}
+
+/* ========================================
+   ADAPTIVE
+======================================== */
+
+@media (max-width: 1200px) {
+
+  .motorcycle-layout {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+  .motorcycle-main-info {
+    position: static;
+  }
+
+  .specs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .motorcycle-page {
+    padding: 40px 0 80px;
+  }
+
+  .motorcycle-gallery {
+    padding: 20px;
+  }
+
+  .motorcycle-gallery img {
+    height: 320px;
+  }
+
+  .motorcycle-main-info h1 {
+    font-size: 42px;
+  }
+
+  .motorcycle-description {
+    font-size: 20px;
+  }
+
+  .motorcycle-price h2 {
+    font-size: 40px;
+  }
+
+  .motorcycle-actions {
+    flex-direction: column;
+  }
+
+  .motorcycle-actions .btn,
+  .compare-btn {
+    width: 100%;
+  }
+
+  .motorcycle-specs-block {
+    padding-top: 50px;
+  }
+
+  .motorcycle-specs-block h2 {
+    font-size: 36px;
+  }
+
+  .specs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .spec-item strong {
+    font-size: 28px;
+  }
+
+}

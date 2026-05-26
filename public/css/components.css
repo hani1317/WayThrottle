@@ -1,0 +1,181 @@
+/* ========================================
+   BUTTONS
+======================================== */
+
+.btn,
+.small-btn,
+.restart-btn,
+.catalog-btn,
+.start-btn {
+  background: var(--accent);
+
+  color: var(--text);
+
+  border: none;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+
+  text-decoration: none;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Ubuntu Condensed', sans-serif;
+
+  border-radius: 0;
+}
+
+.btn,
+.restart-btn,
+.catalog-btn,
+.start-btn {
+  padding: 14px 28px;
+
+  font-size: 20px;
+}
+
+.small-btn {
+  padding: 12px 20px;
+
+  font-size: 18px;
+}
+
+.btn:hover,
+.small-btn:hover,
+.restart-btn:hover,
+.catalog-btn:hover,
+.start-btn:hover {
+  background: var(--accent-hover);
+
+  transform: translateY(-2px);
+}
+
+/* ========================================
+   CARDS
+======================================== */
+
+.card {
+  width: 30%;
+  height: 200px;
+
+  background: var(--card);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 10px;
+
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+
+  background: #333;
+}
+
+.cards {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-top: 30px;
+}
+
+/* ========================================
+   SLIDER
+======================================== */
+
+.slider-wrapper {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 25px;
+}
+
+.slider {
+  overflow: hidden;
+
+  position: relative;
+}
+
+.slides {
+  display: flex;
+
+  transition: transform 0.5s ease;
+}
+
+/* ========================================
+   ARROWS
+======================================== */
+
+.arrow {
+  font-size: 70px;
+
+  cursor: pointer;
+
+  user-select: none;
+
+  transition: 0.3s;
+}
+
+.arrow:hover {
+  color: var(--accent);
+}
+
+/* ========================================
+   SPECS
+======================================== */
+
+.specs {
+  display: flex;
+
+  gap: 15px;
+
+  flex-wrap: wrap;
+}
+
+.specs span {
+  padding: 10px 15px;
+
+  border-left: 4px solid var(--accent);
+}
+
+/* ========================================
+   ADAPTIVE
+======================================== */
+
+@media (max-width: 1100px) {
+
+  .slider-wrapper {
+    gap: 15px;
+  }
+
+  .arrow {
+    font-size: 50px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .cards {
+    flex-direction: column;
+
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+}

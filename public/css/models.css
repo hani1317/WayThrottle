@@ -1,0 +1,155 @@
+/* ========================================
+   CATALOG
+======================================== */
+
+.catalog {
+  padding: 50px 0;
+}
+
+.catalog-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 60px;
+}
+
+.search-input {
+  width: 40%;
+
+  padding: 10px;
+
+  border: none;
+
+  background: var(--card);
+
+  color: var(--text);
+
+  font-size: 20px;
+
+  font-family: 'Oswald', sans-serif;
+}
+
+.search-input::placeholder {
+  color: var(--text);
+}
+
+.top-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+
+.motorcycle-list {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.motorcycle-card {
+  display: flex;
+  gap: 30px;
+
+  align-items: flex-start;
+}
+
+.motorcycle-image {
+  width: 420px;
+  height: 250px;
+
+  background: transparent;
+
+  overflow: hidden;
+}
+
+.motorcycle-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.motorcycle-info {
+  flex: 1;
+}
+
+.motorcycle-info h2 {
+  font-size: 30px;
+
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.motorcycle-info p {
+  font-size: 24px;
+  line-height: 1.4;
+
+  margin-bottom: 25px;
+}
+
+.motorcycle-specs span {
+  background: var(--card);
+}
+
+.motorcycle-link {
+  color: var(--text);
+
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+.motorcycle-link:hover {
+  color: var(--accent-hover);
+}
+
+/* IMAGE */
+
+.motorcycle-image {
+  width: 420px;
+  height: 250px;
+
+  background: #2A2A2D;
+
+  overflow: hidden;
+
+  position: relative;
+}
+
+/* FAVORITE BUTTON */
+
+.favorite-btn {
+  position: absolute;
+
+  top: 12px;
+  right: 12px;
+
+  border: none;
+  background: transparent;
+
+  color: var(--text);
+
+  font-size: 34px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+  z-index: 5;
+}
+
+.favorite-btn:hover {
+  transform: scale(1.15);
+
+}
+
+/* ACTIVE */
+
+.favorite-btn.active {
+  color: #c2185b;
+}
+
+/* FAVORITES PAGE */
+
+.favorites-page {
+  padding: 140px 0 80px;
+}

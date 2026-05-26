@@ -1,0 +1,153 @@
+/* HERO */
+
+.hero {
+  padding: 40px 0 60px;
+}
+
+.hero-content {
+  margin-top: 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+}
+
+.hero p {
+  font-size: 24px;
+}
+
+.hero-buttons {
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+
+  width: fit-content;
+}
+
+/* BUTTONS */
+
+.btn {
+  background: var(--accent);
+
+  color: var(--text);
+
+  border: none;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+
+  text-decoration: none;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 28px;
+
+  font-size: 20px;
+
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.btn:hover {
+  background: var(--accent-hover);
+
+  transform: translateY(-2px);
+}
+
+/* CARDS */
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.card {
+  width: 30%;
+  height: 200px;
+
+  background: var(--card);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 10px;
+
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: #333;
+}
+
+/* TEST */
+
+.test-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.test-text {
+  width: 45%;
+}
+
+.test-text p {
+  font-size: 24px;
+}
+
+.test-image {
+  width: 45%;
+  height: 250px;
+
+  background: var(--card);
+}
+
+/* ADAPTIVE */
+
+@media (max-width: 1100px) {
+
+  .nav {
+    display: none;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .test-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .test-text,
+  .test-image {
+    width: 100%;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+}

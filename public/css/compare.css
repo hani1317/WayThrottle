@@ -1,0 +1,259 @@
+/* ========================================
+   COMPARE PAGE
+======================================== */
+
+.compare-page {
+  padding: 60px 0 100px;
+}
+
+/* HEADER */
+
+.compare-header {
+  margin-bottom: 60px;
+}
+
+.compare-header h1 {
+  font-size: 68px;
+
+  margin-bottom: 18px;
+}
+
+.compare-header p {
+  width: 700px;
+  max-width: 100%;
+
+  font-size: 26px;
+
+  line-height: 1.6;
+
+  color: #d6d0d0;
+}
+
+/* EMPTY */
+
+.empty-compare {
+  text-align: center;
+
+  padding: 120px 40px;
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  background: rgba(255,255,255,0.03);
+}
+
+.empty-compare h2 {
+  font-size: 42px;
+
+  margin-bottom: 20px;
+}
+
+.empty-compare p {
+  font-size: 24px;
+
+  color: #bdbdbd;
+
+  margin-bottom: 40px;
+}
+
+/* TOP */
+
+.compare-top {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(260px, 1fr));
+
+  gap: 30px;
+
+  margin-bottom: 60px;
+}
+
+/* BIKE CARD */
+
+.compare-bike {
+  min-width: 0;
+
+  background: rgba(255,255,255,0.03);
+
+  border: 1px solid rgba(255,255,255,0.06);
+
+  padding: 25px;
+
+  transition: 0.3s ease;
+}
+
+.compare-bike:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(106,10,143,0.7);
+}
+
+.compare-bike img {
+  width: 100%;
+  height: 240px;
+
+  object-fit: contain;
+}
+
+.compare-bike h2 {
+  font-size: 18px;
+
+  color: #9f9f9f;
+
+  margin-top: 20px;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+}
+
+.compare-bike h3 {
+  font-size: 34px;
+
+  margin-top: 10px;
+
+  line-height: 1.2;
+}
+
+/* REMOVE */
+
+.remove-compare {
+  margin-top: 25px;
+
+  background: transparent;
+
+  border: 2px solid #4B0564;
+
+  color: #F5EFED;
+
+  padding: 12px 20px;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+
+  font-size: 18px;
+
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.remove-compare:hover {
+  background: #4B0564;
+}
+
+/* TABLE */
+
+.compare-table {
+  border-top: 1px solid #2a2a2d;
+
+  overflow-x: auto;
+}
+
+.compare-row {
+  display: grid;
+
+  grid-template-columns:
+    260px repeat(auto-fit, minmax(220px, 1fr));
+
+  border-bottom: 1px solid #2a2a2d;
+}
+
+.compare-label,
+.compare-value {
+  padding: 24px 20px;
+}
+
+.compare-label {
+  background: rgba(255,255,255,0.02);
+
+  color: #9f9f9f;
+
+  font-size: 18px;
+}
+
+.compare-value {
+  color: #F5EFED;
+
+  font-size: 20px;
+}
+
+/* ACTIVE BUTTON */
+
+.compare-btn.active {
+  background: #6a0a8f;
+}
+
+/* ========================================
+   ADAPTIVE
+======================================== */
+
+@media (max-width: 1100px) {
+
+  .compare-header h1 {
+    font-size: 52px;
+  }
+
+  .compare-header p {
+    font-size: 22px;
+  }
+
+  .compare-bike h3 {
+    font-size: 28px;
+  }
+
+  .compare-row {
+    min-width: 900px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .compare-page {
+    padding: 40px 0 80px;
+  }
+
+  .compare-header {
+    margin-bottom: 40px;
+  }
+
+  .compare-header h1 {
+    font-size: 40px;
+  }
+
+  .compare-header p {
+    font-size: 20px;
+  }
+
+  .empty-compare {
+    padding: 80px 25px;
+  }
+
+  .empty-compare h2 {
+    font-size: 32px;
+  }
+
+  .empty-compare p {
+    font-size: 20px;
+  }
+
+  .compare-bike {
+    padding: 20px;
+  }
+
+  .compare-bike img {
+    height: 200px;
+  }
+
+  .compare-bike h3 {
+    font-size: 24px;
+  }
+
+  .compare-label,
+  .compare-value {
+    padding: 18px 16px;
+
+    font-size: 18px;
+  }
+
+}
